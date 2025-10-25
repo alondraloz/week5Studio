@@ -1,0 +1,70 @@
+    body {
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: pink;
+    }
+
+    #xy-pad {
+      width: 100vh;
+      height: 80vh;
+      border: 2px solid #000;
+      background: rgba(255, 255, 255, 0.5);
+      position: relative;
+      display: flex;
+      cursor: none;
+    }
+
+    #menu {
+      display: flex;
+      justify-content: space-evenly;
+      padding: 1em;
+    }
+
+    .space {
+      padding: 1em;
+    }
+
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -500;
+    }
+
+    #dot {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 999;
+
+      display: flex;
+    }
+
+    .ellipse {
+      width: 20px;
+      height: 50px; 
+      border-radius: 50%/50%;
+      background: yellow;
+    }
+    #e1 {
+      transform: translate(100%, 0);
+    }
+    #e2 {
+      transform: translate(100%, 0);
+      transform: rotate(90deg);
+    }
+    #e3 {
+      width: 10px;
+      height: 10px; 
+      border-radius: 50%;
+      background: black;
+      transform: translate(-150%, 200%);
+    }
+
+    #dot.active {
+        background: none;
+    }
